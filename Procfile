@@ -1,1 +1,1 @@
-web: java -jar target/sj21224bhif-AslanTan-ProjectDoctor-0.0.1-SNAPSHOT.jar
+project: java -jar target/sj21224bhif-AslanTan-ProjectDoctor-0.0.1-SNAPSHOT.jar 
