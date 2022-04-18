@@ -1,0 +1,122 @@
+POST http://localhost:80/api/patient/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name" : {
+    "firstname": "Sel",
+    "subname": "Ilyas",
+    "lastname": "Tan"
+  },
+  "gender": "MALE",
+  "phonenumber": {
+    "countrycode": "+43",
+    "areacode": "660",
+    "serialnumber": "3170155"
+  },
+  "title": {
+    "grade": "M",
+    "subjectGrade": "SCIENCE"
+  },
+  "address": {
+    "street": "Zehdengasse 12",
+    "zipcode": "1220",
+    "place": "Wien"
+  },
+  "birthDate": "2004-04-09",
+  "svNumber": "4030090404"
+}
+###
+
+POST http://localhost:80/api/patient/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name" : {
+    "firstname": "Hans",
+    "subname": "Peter",
+    "lastname": "Berger"
+  },
+  "gender": "MALE",
+  "phonenumber": {
+    "countrycode": "+43",
+    "areacode": "699",
+    "serialnumber": "1289108"
+  },
+  "title": {
+    "grade": "MAG",
+    "subjectGrade": "SCIENCE"
+  },
+  "address": {
+    "street": "Mariahilferstrasse 12",
+    "zipcode": "1140",
+    "place": "Wien"
+  },
+  "birthDate": "1967-05-12"
+
+}
+###
+
+PUT http://localhost:80/api/patient/1
+Content-Type: application/json
+Accept: application/json
+
+
+{
+  "name" : {
+    "firstname": "Sandra",
+    "subname": "Ilyas",
+    "lastname": "Meere"
+  },
+  "gender": "FEMALE",
+  "phonenumber": {
+    "countrycode": "+43",
+    "areacode": "610",
+    "serialnumber": "1514899"
+  },
+  "title": {
+    "grade": "B",
+    "subjectGrade": "ENGINEERING"
+  },
+  "address": {
+    "street": "Attemsgasse 9",
+    "zipcode": "1220",
+    "place": "Wien"
+  },
+  "birthDate": "2002-02-10",
+  "svNumber": "4030100202"
+
+}
+###
+
+PATCH http://localhost:80/api/patient/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "birthDate": "2000-10-11",
+  "svNumber": "4030111000"
+}
+###
+
+
+GET http://localhost:80/api/patient/
+Content-Type: application/json
+Accept: application/json
+###
+
+GET http://localhost:80/api/patient/2
+Content-Type: application/json
+Accept: application/json
+###
+
+DELETE http://localhost:80/api/patient/1
+Content-Type: application/json
+Accept: application/json
+###
+
+DELETE http://localhost:80/api/patient/
+Content-Type: application/json
+Accept: application/json
+###

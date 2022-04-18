@@ -1,0 +1,131 @@
+POST http://localhost:80/api/theraphy/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "art": "Psycho-Therapie",
+  "begin": "2022-02-23",
+  "end": "2022-03-22",
+
+   "patient": {
+     "name": {
+       "firstname": "Sel",
+       "subname": "Ilyas",
+       "lastname": "Tan"
+     },
+     "gender": "MALE",
+     "phonenumber": {
+       "countrycode": "+43",
+       "areacode": "",
+       "serialnumber": "3170155"
+     },
+     "title": {
+       "grade": "M",
+       "subjectGrade": "SCIENCE"
+     },
+     "address": {
+       "street": "Zehdengasse 12",
+       "zipcode": "1220",
+       "place": "Wien"
+     },
+     "birthDate": "2004-04-09",
+     "svNumber": "4030090404"
+   },
+   "doctor": {
+    "name" : {
+      "firstname": "Sel",
+      "subname": "Ilyas",
+      "lastname": "Tan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "+43",
+      "areacode": "660",
+      "serialnumber": "3170155"
+    },
+    "title": {
+      "grade": "M",
+      "subjectGrade": "SCIENCE"
+    },
+    "address": {
+      "street": "Zehdengasse 12",
+      "zipcode": "1220",
+      "place": "Wien"
+    },
+    "birthDate": "2004-04-09",
+    "abbreviation": "AE",
+    "aerztekammerId": "AE001",
+    "subject": "ALLGEMEINMEDIZIN",
+    "position": "MEDICAL_DIRECTOR",
+    "salary": 12.89,
+
+    "department": {
+      "abbreviation": "AEK",
+      "name": "AerzteKammer",
+      "head": {
+        "name" : {
+          "firstname": "Markus",
+          "subname": "Conrad",
+          "lastname": "Heinrich"
+        },
+        "gender": "MALE",
+        "phonenumber": {
+          "countrycode": "+43",
+          "areacode": "",
+          "serialnumber": "3170155"
+        },
+        "title": {
+          "grade": "M",
+          "subjectGrade": "SCIENCE"
+        },
+        "address": {
+          "street": "Zehdengasse 12",
+          "zipcode": "1220",
+          "place": "Wien"
+        },
+        "birthDate": "2004-04-09",
+        "abbreviation": "AE",
+        "aerztekammerId": "AE001",
+        "subject": "ALLGEMEINMEDIZIN",
+        "position": "MEDICAL_DIRECTOR",
+        "salary": 12.89
+      }
+    }
+  }
+   }
+###
+
+PATCH http://localhost:80/api/theraphy/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "doctor": {
+  "aerztekammerId": "AE002"
+}
+}
+
+###
+
+GET http://localhost:80/api/theraphy/
+Content-Type: application/json
+Accept: application/json
+###
+
+GET http://localhost:80/api/theraphy/1
+Content-Type: application/json
+Accept: application/json
+###
+
+DELETE http://localhost:80/api/theraphy/
+Content-Type: application/json
+Accept: application/json
+###
+
+DELETE http://localhost:80/api/theraphy/1
+Content-Type: application/json
+Accept: application/json
+###
+
+
+

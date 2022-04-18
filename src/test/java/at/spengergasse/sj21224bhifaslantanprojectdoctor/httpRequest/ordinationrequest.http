@@ -1,0 +1,88 @@
+
+
+POST http://localhost:80/api/ordination/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "abbreviation": "MA",
+  "name": "Magistrat",
+  "address": {
+    "street": "Mauergasse 1",
+    "zipcode": "1220",
+    "place": "Wien"
+   }
+
+}
+###
+
+POST http://localhost:80/api/ordination/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "abbreviation": "DE",
+  "name": "Dermazentrum",
+  "address": {
+    "street": "Siebenhirten 1",
+    "zipcode": "1230",
+    "place": "Wien"
+  }
+
+}
+###
+
+GET http://localhost:80/api/ordination/
+Content-Type: application/json
+Accept: application/json
+
+###
+
+
+
+
+PUT http://localhost:80/api/ordination/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "abbreviation": "ZA",
+  "name": "Zahnarzt",
+  "address": {
+    "street": "Zehdengasse 12",
+    "zipcode": "1220",
+    "place": "Wien"
+  }
+}
+###
+
+PATCH http://localhost:80/api/ordination/1
+Content-Type:  application/json
+Accept: application/json
+
+{
+  "name": "Augenarzt"
+}
+###
+
+
+DELETE http://localhost:80/api/ordination/1
+Content-Type: application/json
+Accept: application/json
+
+###
+
+DELETE http://localhost:80/api/ordination/
+Content-Type: application/json
+Accept: application/json
+
+###
+
+
+
+
+
+
+
+
+

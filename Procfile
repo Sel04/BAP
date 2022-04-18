@@ -1,0 +1,1 @@
+web: java -jar target/sj21224bhifaslantanprojectdoctor-0.0.1-SNAPSHOT.jar

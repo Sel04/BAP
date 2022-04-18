@@ -1,0 +1,204 @@
+POST http://localhost:80/api/departments/
+Content-Type: application/json
+Accept: application/json
+
+{
+"date": "2002-03-20",
+  "diagnosis": "asdkasdnsakldnsad",
+  "doctor": {
+      "name": {
+        "firstname": "Cemil",
+        "subname": "",
+        "lastname": "Aslan"
+      },
+      "gender": "MALE",
+      "phonenumber": {
+        "countrycode": "43",
+        "areacode": "664",
+        "serialnumber": "1840791"
+      },
+      "title": {
+        "grade": "B",
+        "subjectgrade": "ARTS"
+      },
+      "address": {
+        "street": "Pernerstorfergasse 60/3/18",
+        "zipcode": "1100",
+        "place": "Vienna"
+      },
+      "birthDate": "2002-03-20",
+      "abbreviation": "CA",
+      "aerztekammerId": "AR001",
+      "subject": "ALLGEMEINMEDIZIN",
+      "position": "MEDICAL_DIRECTOR",
+      "salary": 2005.00
+    },
+  "patient": {
+    "name": {
+      "firstname": "Cemil",
+      "subname": "",
+      "lastname": "Aslan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "svNumber": "2332 323223",
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    },
+    "birthDate": "2002-03-20"
+  }
+
+}
+###
+
+GET http://localhost:8080/api/diagnoses/
+Accept: application/json
+###
+
+DELETE http://localhost:8080/api/diagnoses/
+Content-Type: application/json
+Accept: application/json
+###
+
+DELETE http://localhost:8080/api/diagnoses/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "date": "2002-03-20",
+  "diagnosis": "asdkasdnsakldnsad",
+  "doctor": {
+    "name": {
+      "firstname": "Cemil",
+      "subname": "",
+      "lastname": "Aslan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    },
+    "birthDate": "2002-03-20",
+    "abbreviation": "CA",
+    "aerztekammerId": "AR001",
+    "subject": "ALLGEMEINMEDIZIN",
+    "position": "MEDICAL_DIRECTOR",
+    "salary": 2005.00
+  },
+  "patient": {
+    "name": {
+      "firstname": "Cemil",
+      "subname": "",
+      "lastname": "Aslan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "svNumber": "2332 323223",
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    },
+    "birthDate": "2002-03-20"
+  }
+
+}
+###
+
+PUT http://localhost:8080/api/diagnoses/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "date": "2002-03-20",
+  "diagnosis": "asdkasdnsakldnsad",
+  "doctor": {
+    "name": {
+      "firstname": "Johnny",
+      "subname": "",
+      "lastname": "Bravo"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    },
+    "birthDate": "2002-03-20",
+    "abbreviation": "CA",
+    "aerztekammerId": "AR001",
+    "subject": "ALLGEMEINMEDIZIN",
+    "position": "MEDICAL_DIRECTOR",
+    "salary": 2005.00
+  },
+  "patient": {
+    "name": {
+      "firstname": "Cemil",
+      "subname": "",
+      "lastname": "Aslan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "svNumber": "2332 323223",
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    },
+    "birthDate": "2002-03-20"
+  }
+
+}
+###
+PATCH http://localhost:8080/api/diagnoses/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "diagnosis": "hai ich bins cmeilaksdnka"
+}

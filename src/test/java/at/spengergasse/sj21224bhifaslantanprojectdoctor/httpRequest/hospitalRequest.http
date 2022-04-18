@@ -1,0 +1,161 @@
+POST http://localhost:80/api/hospital
+Content-Type: application/json
+Accept: application/json
+
+{
+"abbreviation":"DC",
+"name": "Doctor Consept",
+  "phonenumber": {
+    "countrycode": "43",
+    "areacode": "664",
+    "serialnumber": "1840791"
+  },
+  "address": {
+    "street": "Pernerstorfergasse 60/3/18",
+    "zipcode": "1100",
+    "place": "Vienna"
+  },
+  "head" : {
+    "name": {
+      "firstname": "Cemil",
+      "subname": "",
+      "lastname": "Aslan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    },
+    "birthDate": "2002-03-20",
+    "abbreviation": "CA",
+    "aerztekammerId": "AR001",
+    "subject": "ALLGEMEINMEDIZIN",
+    "position": "MEDICAL_DIRECTOR",
+    "salary": 2005.00
+  },
+  "manager" : {
+    "name": {
+      "firstname": "Cemil",
+      "subname": "",
+      "lastname": "Aslan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    }
+}
+}
+###
+GET http://localhost:8080/api/hospital/
+Content-Type: application/json
+Accept: application/json
+###
+
+PUT http://localhost:8080/api/hospital/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "abbreviation":"DC",
+  "name": "Doctor Consept",
+  "phonenumber": {
+    "countrycode": "43",
+    "areacode": "664",
+    "serialnumber": "1840791"
+  },
+  "address": {
+    "street": "Pernerstorfergasse 60/3/18",
+    "zipcode": "1100",
+    "place": "Vienna"
+  },
+  "head" : {
+    "name": {
+      "firstname": "Cemil",
+      "subname": "",
+      "lastname": "Aslan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    },
+    "birthDate": "2002-03-20",
+    "abbreviation": "CA",
+    "aerztekammerId": "AR001",
+    "subject": "ALLGEMEINMEDIZIN",
+    "position": "MEDICAL_DIRECTOR",
+    "salary": 2005.00
+  },
+  "manager" : {
+    "name": {
+      "firstname": "Hofbauer",
+      "subname": "",
+      "lastname": "Volker"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    }
+  }
+}
+###
+
+PATCH  http://localhost:8080/api/hospital/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "address": {
+    "street": "Hollyganggasse 60/3/18",
+    "zipcode": "1100",
+    "place": "Vienna"
+  }
+}
+###
+
+DELETE http://localhost:8080/api/hospital/
+Content-Type: application/json
+Accept: application/json
+###

@@ -1,0 +1,160 @@
+@startuml
+
+
+class Person{
+id: Integer
+name: Name
+gender: Gender
+titlee: List<Title>
+phonenumber: Phonenumber
+address: Address
+birthDate: LocalDate
+age: Integer
+}
+class Doctor<<Entity>>{
+abbreviation: String
+aerztekammerId: Integer
+subject: Subject
+position: Position
+salary: double
+patients: List<Patient>
+}
+class Patient<<Entity>>{
+svnumber: String
+diagnosis: List<Diagnosis>
+
+}
+class Manager<<Entity>>{
+OrdinationId: Integer
+}
+class Secretary<<Entity>>{
+OrdinationId: Integer
+}
+class Hospital{
+abbreviation: String
+name: String
+phonenumber: String
+address: Address
+head: Doctor
+manager: Manager
+departments: List<Department>
+}
+class Department{
+abbreviation: String
+name: Name
+hospitalId: Hospital
+head:Doctor
+doctors: List<Doctor>
+}
+class Ordination{
+abbreviation: String
+address: Address
+head: Doctor
+name: Name
+manager: Manager
+doctors: List<Doctor>
+secretary: List<Secretary>
+}
+
+class Therapy{
+begin: LocalDate
+endd: LocalDate
+doctor: Doctor
+patient: Patient
+}
+class Diagnosis{
+date: LocalDate
+diagnosis: string
+doctor: Doctor
+patient: Patient
+}
+class Title<<ValueObject>>{
+grade:Grade
+subjectGrade: SubjectGrade
+}
+enum Gender{
+MALE
+FEMALE
+}
+enum Grade{
+B.
+M.
+MAG.
+DIPL.
+DR.
+}
+enum SubjectGrade{
+ARTS
+ENGINEERING
+SCIENCE
+MED.VET.
+MED.DENT.
+RER.NAT.
+PHIL.
+IUR.
+A.I.S
+PHD.
+NAT.TECHN.
+SCIENT.MED.
+MONT.
+THEOL.
+}
+enum Position{
+MEDICAL DIRECTOR
+HEAD OF DEPARTMENT
+ATTENDING PHYSICIAN
+FELLOW
+CHIEF RESIDENT
+SENIOR RESIDENT
+JUNIOR RESIDENT
+INTERN
+MEDICAL STUDENT
+PRE-MED STUDENT
+}
+enum Subject{
+ALLGEMEINMEDIZIN
+ANAESTHESIOLOGIE UND INTENSIVMEDIZIN
+
+}
+class Address <<ValueObject>>{
+street: string
+zipcode: Integer
+place: string
+}
+class Name <<ValueObject>>{
+firstname: string
+subname: string
+lastname: string
+}
+
+Person <|-up- Doctor
+Person <|-up- Patient
+Person <|-up- Manager
+Person <|-up- Secretary
+
+Person -up- Gender
+Person -up- Address
+Title -left- Grade
+Title-right- SubjectGrade
+Person "1" o-down- "0..n" Title : contains
+Hospital "1" *-down- "1..n" Department :contains
+Department "1" *-down- "1..n" Doctor :contains
+Doctor-left- Position
+Doctor-left-Subject
+
+Ordination "1" o-down- "1..n" Doctor:contains
+Ordination "1" o-left- "1..n" Manager:contains
+Ordination "1" o-left- "1..n" Secretary:contains
+
+Person -up- Name
+Doctor "1" *-right "0..n" Diagnosis :contains
+Doctor "1" *-right "0..n" Therapy :contains
+Therapy "0..n" *-left "1" Patient :contains
+Diagnosis "0..n" *-down "1" Patient :contains
+
+
+
+
+
+
+@enduml

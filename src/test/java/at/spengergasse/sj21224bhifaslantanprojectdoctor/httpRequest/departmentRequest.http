@@ -1,0 +1,99 @@
+GET http://localhost:80/api/departments/
+Accept: application/json
+###
+
+POST http://localhost:80/api/departments/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Childeren-Department",
+  "abbreviation": "CD",
+  "head" : {
+    "name": {
+      "firstname": "Cemil",
+      "subname": "Heilig",
+      "lastname": "Aslan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    },
+    "birthDate": "2002-03-20",
+    "abbreviation": "CA",
+    "aerztekammerId": "AR001",
+    "subject": "ALLGEMEINMEDIZIN",
+    "position": "MEDICAL_DIRECTOR",
+    "salary": 2005.00
+  }
+}
+###
+DELETE http://localhost:80/api/departments
+Content-Type: application/json
+Accept: application/json
+###
+DELETE http://localhost:80/api/departments/1
+Content-Type: application/json
+Accept: application/json
+
+###
+<<<<<<< HEAD
+PUT http://localhost:80/api/departments/1
+=======
+PUT http://localhost:8080/api/departments/11
+>>>>>>> 7bfd41bc546097dabbf99b6672683112c724bc5d
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Dermatologie-Department",
+  "abbreviation": "DD",
+  "head" : {
+    "name": {
+      "firstname": "Cemil",
+      "subname": "",
+      "lastname": "Aslan"
+    },
+    "gender": "MALE",
+    "phonenumber": {
+      "countrycode": "43",
+      "areacode": "664",
+      "serialnumber": "1840791"
+    },
+    "title": {
+      "grade": "B",
+      "subjectgrade": "ARTS"
+    },
+    "address": {
+      "street": "Pernerstorfergasse 60/3/18",
+      "zipcode": "1100",
+      "place": "Vienna"
+    },
+    "birthDate": "2002-03-20",
+    "abbreviation": "CA",
+    "aerztekammerId": "AR001",
+    "subject": "ALLGEMEINMEDIZIN",
+    "position": "MEDICAL_DIRECTOR",
+    "salary": 2005.00
+  }
+}
+###
+PATCH http://localhost:80/api/departments/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "General-Department"
+}
+###
