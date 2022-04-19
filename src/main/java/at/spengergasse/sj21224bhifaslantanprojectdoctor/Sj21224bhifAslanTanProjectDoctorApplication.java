@@ -58,7 +58,6 @@ public class Sj21224bhifAslanTanProjectDoctorApplication {
         }
     }
 
-    @Bean
     public DataSource dataSource() throws SQLException {
         if (dbUrl == null || dbUrl.isEmpty()) {
             return new HikariDataSource();
