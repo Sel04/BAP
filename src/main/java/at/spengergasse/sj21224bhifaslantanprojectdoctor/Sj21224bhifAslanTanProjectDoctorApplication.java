@@ -10,7 +10,6 @@ import org.springframework.stereotype.*;
 public class Sj21224bhifAslanTanProjectDoctorApplication {
 
     @RequestMapping("/")
-    @ResponseBody
     String home() {
         return "Hello World!";
     }
