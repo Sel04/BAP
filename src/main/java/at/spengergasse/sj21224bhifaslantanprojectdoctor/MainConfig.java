@@ -1,6 +1,6 @@
 package main.java.at.spengergasse.sj21224bhifaslantanprojectdoctor;
 
-import org.apache.commons.dbcp.BasicDataSource;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -9,7 +9,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 @Configuration
-@ComponentScan(basePackages = "main.java.at.spengergasse.sj21224bhifaslantanprojectdoctor")
+@ComponentScan(basePackages = "at.spengergasse.sj21224bhifaslantanprojectdoctor")
 public class MainConfig {
 
     @Bean
