@@ -1,4 +1,4 @@
-POST http://localhost:80/api/theraphy/
+POST http://localhost:5000/api/theraphy/
 Content-Type: application/json
 Accept: application/json
 
@@ -95,7 +95,7 @@ Accept: application/json
    }
 ###
 
-PATCH http://localhost:80/api/theraphy/1
+PATCH http://localhost:5000/api/theraphy/1
 Content-Type: application/json
 Accept: application/json
 
@@ -107,22 +107,22 @@ Accept: application/json
 
 ###
 
-GET http://localhost:80/api/theraphy/
+GET http://localhost:5000/api/theraphy/
 Content-Type: application/json
 Accept: application/json
 ###
 
-GET http://localhost:80/api/theraphy/1
+GET http://localhost:5000/api/theraphy/1
 Content-Type: application/json
 Accept: application/json
 ###
 
-DELETE http://localhost:80/api/theraphy/
+DELETE http://localhost:5000/api/theraphy/
 Content-Type: application/json
 Accept: application/json
 ###
 
-DELETE http://localhost:80/api/theraphy/1
+DELETE http://localhost:5000/api/theraphy/1
 Content-Type: application/json
 Accept: application/json
 ###

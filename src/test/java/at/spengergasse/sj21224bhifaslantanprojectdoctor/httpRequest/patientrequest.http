@@ -1,4 +1,4 @@
-POST http://localhost:80/api/patient/
+POST http://localhost:5000/api/patient/
 Content-Type: application/json
 Accept: application/json
 
@@ -28,7 +28,7 @@ Accept: application/json
 }
 ###
 
-POST http://localhost:80/api/patient/
+POST http://localhost:5000/api/patient/
 Content-Type: application/json
 Accept: application/json
 
@@ -58,7 +58,7 @@ Accept: application/json
 }
 ###
 
-PUT http://localhost:80/api/patient/1
+PUT http://localhost:5000/api/patient/1
 Content-Type: application/json
 Accept: application/json
 
@@ -90,7 +90,7 @@ Accept: application/json
 }
 ###
 
-PATCH http://localhost:80/api/patient/1
+PATCH http://localhost:5000/api/patient/1
 Content-Type: application/json
 Accept: application/json
 
@@ -101,22 +101,22 @@ Accept: application/json
 ###
 
 
-GET http://localhost:80/api/patient/
+GET http://localhost:5000/api/patient/
 Content-Type: application/json
 Accept: application/json
 ###
 
-GET http://localhost:80/api/patient/2
+GET http://localhost:5000/api/patient/2
 Content-Type: application/json
 Accept: application/json
 ###
 
-DELETE http://localhost:80/api/patient/1
+DELETE http://localhost:5000/api/patient/1
 Content-Type: application/json
 Accept: application/json
 ###
 
-DELETE http://localhost:80/api/patient/
+DELETE http://localhost:5000/api/patient/
 Content-Type: application/json
 Accept: application/json
 ###

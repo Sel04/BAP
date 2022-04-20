@@ -1,4 +1,4 @@
-POST http://localhost:80/api/hospital
+POST http://localhost:5000/api/hospital
 Content-Type: application/json
 Accept: application/json
 
@@ -67,12 +67,12 @@ Accept: application/json
 }
 }
 ###
-GET http://localhost:8080/api/hospital/
+GET http://localhost:5000/api/hospital/
 Content-Type: application/json
 Accept: application/json
 ###
 
-PUT http://localhost:8080/api/hospital/1
+PUT http://localhost:5000/api/hospital/1
 Content-Type: application/json
 Accept: application/json
 
@@ -142,7 +142,7 @@ Accept: application/json
 }
 ###
 
-PATCH  http://localhost:8080/api/hospital/1
+PATCH  http://localhost:5000/api/hospital/1
 Content-Type: application/json
 Accept: application/json
 
@@ -155,7 +155,7 @@ Accept: application/json
 }
 ###
 
-DELETE http://localhost:8080/api/hospital/
+DELETE http://localhost:5000/api/hospital/
 Content-Type: application/json
 Accept: application/json
 ###
